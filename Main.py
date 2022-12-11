@@ -178,3 +178,47 @@ def create_order():
             print("\n Invalid input.")
 
     return order
+
+#Displays the receipt after paying for the order
+def print_history():
+    os.system('cls')
+    print("\n\n")
+    print(" Credit Card Receipts: ")
+    for i in range(0,len(credit_history)):
+        credit_history[i].print_receipt()
+    print(" Debit Card Receipts: ")
+    for i in range(0,len(debit_history)):
+        debit_history[i].print_receipt()
+    print(" Cash Receipts: ")
+    for i in range(0,len(cash_history)):
+        cash_history[i].print_receipt()
+
+#Displays the available Method of Payments
+def print_mop():
+    print(" ------------------")
+    print(" | 1: Credit Card |")
+    print(" | 2: Debit Card  |")
+    print(" | 3: Cash        |")
+    print(" | 4: Cancel      |")
+    print(" ------------------")
+#Payment Function
+def start_pay(order):
+    os.system('cls')
+    print("\n\t\t\tPAYMENT")
+    subtotal = 0.0
+    for i in range(0,len(order)):
+        subtotal = (subtotal + (float(order[i].price) * float(order[i].quantity)))
+    total = ((subtotal * 0.07) + subtotal)
+    print("\n Item\t\t\tPrice\t\t\tQuantity")
+    for x in range(0,len(order)):
+        
+            print(" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print( order[x].menu_name + "\t\t₱" + str(order[x].price) + "\t\t\t   " + str(order[x].quantity))
+            print(" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+
+    print("\n Subtotal: ₱%.2f\n" %(subtotal))
+    print(" Total: ₱%.2f" %(total))
+    print("\n\n Choose payment method\n")
+    print_mop()
+
+    choice = input(" Enter mode of payment: ")
