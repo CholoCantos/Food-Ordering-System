@@ -99,4 +99,82 @@ def create_order():
             else:
                 print(" \n Invalid input.")
 
-  
+        elif(order_choice == "2"):
+            os.system('cls')
+            print("\n\t    EXTRAS")
+            print("\n Item\t\t\tPrice")
+            print(" -------------------------------")
+            print(" | 1. Chicharon\t\t₱25.00 |")
+            print(" | 2. Plain Rice\t₱20.00 |")
+            print(" | 3. Fried Rice\t₱30.00 |")
+            print(" | 4. Extra Toppings\t₱50.00 |")
+            print(" | 5. Atay\t\t₱35.00 |")
+            print(" -------------------------------")
+            side_choice = input("\n Type Choice Here: ")
+
+            if(side_choice == "1"):
+                quantity = input("\n Enter quantity: ")
+                order.append(menu(" Chicharon", 25.00, quantity))
+                os.system('cls')
+            elif(side_choice == "2"):
+                quantity = input("\n Enter quantity: ")
+                order.append(menu(" Plain Rice", 10.00, quantity))
+                os.system('cls')
+            elif(side_choice == "3"):
+                quantity = input("\n Enter quantity: ")
+                order.append(menu(" Fried Rice", 20.00, quantity))
+                os.system('cls')
+            elif(side_choice == "4"):
+                quantity = input("\n Enter Quantity: ")
+                order.append(menu(" Extra Toppings", 50.00, quantity))
+                os.system('cls')
+            elif(side_choice == "5"):
+                quantity = input("\n Enter Quantity: ")
+                order.append(menu(" Atay      ", 35.00, quantity))
+                os.system('cls')
+            else:
+                print("\n Invalid Input.")
+            
+        elif(order_choice == "3"):
+            os.system('cls')
+            print("\n\t    DRINKS")
+            print("\n Item\t\t\tPrice")
+            print(" -------------------------------")
+            print(" | 1. Mineral Water\t₱15.00 |")
+            print(" | 2. Coke Mismo\t₱20.00 |")
+            print(" | 3. Mountain Dew\t₱20.00 |")
+            print(" | 4. Pepsi\t\t₱20.00 |")
+            print(" | 5. Royal\t\t₱20.00 |")
+            print(" -------------------------------")
+            drink_choice = input("\n Type Choice Here: ")
+            
+            if(drink_choice == "1"):
+                quantity = input("\n Enter quantity: ")
+                order.append(drink(" Mineral Water", 15.00, quantity))
+                os.system('cls')
+            elif(drink_choice == "2"):
+                quantity = input("\n Enter quantity: ")
+                order.append(drink(" Coke Mismo", 20.00, quantity))
+                os.system('cls')
+            elif(drink_choice == "3"):
+                quantity = input("\n Enter quantity: ")
+                order.append(drink(" Mountain Dew", 20.00, quantity))
+                os.system('cls')
+            elif(drink_choice == "4"):
+                quantity = input("\n Enter quantity: ")
+                order.append(drink(" Pepsi\t", 20.00, quantity))
+                os.system('cls')  
+            elif(drink_choice == "5"):
+                quantity = input("\n Enter quantity: ")
+                order.append(drink(" Royal\t", 20.00, quantity))
+                os.system('cls')
+            else:
+                print("\n Invalid Input.")  
+                
+        elif(order_choice == "4"):
+            order_complete = True
+        
+        else:
+            print("\n Invalid input.")
+
+    return order
