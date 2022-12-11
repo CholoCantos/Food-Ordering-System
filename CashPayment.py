@@ -1,4 +1,3 @@
-import os
 from ModeOfPayment import mode_of_payment
 class cash_payment (mode_of_payment):
   amount_given = 0.0
