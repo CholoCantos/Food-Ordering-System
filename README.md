@@ -31,6 +31,10 @@
 # Video Presentation
 Link: https://www.youtube.com/watch?v=EqaTvWYR1L4
 
+# Self Assessment
+![316880080_3110052092620590_4218902773960192165_n](https://user-images.githubusercontent.com/113867969/206981868-44cec5c6-7f7d-4574-8a3d-9a179f37a600.png)
+
+Score: 18/24
 # Authors
 * [Nico Angelo Burog](https://github.com/NicoAngeloBurog)
 * [Cesar Cholo Cantos](https://github.com/CholoCantos)
