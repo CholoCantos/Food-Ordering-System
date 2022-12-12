@@ -25,7 +25,7 @@
 ![image](https://user-images.githubusercontent.com/113867969/206911667-7f79838e-45be-4506-a842-e413fe5040fb.png)
 
 # Unified Modeling Language (UML)
-![UML python](https://user-images.githubusercontent.com/113867969/206911725-87705c58-0c34-461b-ab58-d769fb615428.png)
+![UML](https://user-images.githubusercontent.com/113867969/206939153-f5afd3e5-f2a0-4abd-a6d9-3a1fe4690c55.png)
 
 # Video Presentation
 Link: 
