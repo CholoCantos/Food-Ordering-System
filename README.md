@@ -29,7 +29,7 @@
 ![UML](https://user-images.githubusercontent.com/113867969/206939153-f5afd3e5-f2a0-4abd-a6d9-3a1fe4690c55.png)
 
 # Video Presentation
-Link: 
+Link: https://www.youtube.com/watch?v=EqaTvWYR1L4
 
 # Authors
 * [Nico Angelo Burog](https://github.com/NicoAngeloBurog)
