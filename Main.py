@@ -222,3 +222,71 @@ def start_pay(order):
     print_mop()
 
     choice = input(" Enter mode of payment: ")
+    
+    #Credit Card Receipt
+    if (choice == "1"):
+        print("\n")
+        temp_name = input(" Enter a name for the order: ")
+        temp_amount = total
+        temp_zip = input(" Enter Zip code: ")
+        temp_payment = credit_card(temp_name, temp_amount,temp_zip)
+        credit_history.append(temp_payment)
+        credit_history[len(credit_history)-1].print_receipt()
+        
+
+    # Debit Card Receipt
+    elif(choice == "2"):
+        print("\n")
+        temp_name = input(" Enter a name for the order: ")
+        temp_amount = total
+        temp_pin = input(" Enter pin: ")
+        debit_history.append(debit_card(temp_name, temp_amount, temp_pin))
+        debit_history[len(debit_history)-1].print_receipt()
+        
+
+    #Cash Payment Receipt
+    elif(choice == "3"):
+        print("\n")
+        temp_name = input(" Enter a name for the order: ")
+        temp_given = input(" Enter amount received: ₱")
+        if (float(temp_given) >= total):
+            cash_history.append(cash_payment(temp_name, total, temp_given))
+            cash_history[len(cash_history)-1].print_receipt()
+        else:
+            print(" Insufficient amount given.")
+
+
+    elif(choice == "4"):
+        os.system('cls')
+        return
+    
+    else:
+        print(" Invalid input")
+
+credit_history = []
+debit_history = []
+cash_history = []
+
+#Main Function -- Opening Screen
+def main(): 
+    user_input = "0"
+    while(user_input != "E"):
+        print("\n ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print(" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print(" ~~~~~~~~~~~~~~~~~   PANSITERIA  ~~~~~~~~~~~~~~~~~~~~")
+        print(" ~~~~~~~~~~~~~~~~~   MAGNIFICO   ~~~~~~~~~~~~~~~~~~~~")
+        print(" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print(" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print("\n   [O]: Start new order\t[R]: Receipts\t [E]: Exit")
+        user_input = input("\n   Enter your choice here: ").upper()
+        if(user_input == "O"):
+            start_pay(create_order())
+        elif(user_input == "R"):
+            print_history()
+        elif(user_input == "E"):
+            exit()
+        else:
+            print(" Invalid Input. Try Again")
+#Calling the main function
+main()
+
