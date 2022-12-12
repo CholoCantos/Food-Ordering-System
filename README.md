@@ -1,6 +1,7 @@
 # Food Ordering System (CLI)
 
-* This program is called the food ordering system. This program utilizes oop principles in python. Our food ordering system mainly focuses on pansiterias / lomians. It is named "Pansiteria Magnifico". The main items are mostly pansit and lomi. There are also extras and drinks to choose from to truly enjoy it with their food.
+* This program is called the food ordering system. This program utilizes oop principles in python. Our food ordering system mainly focuses on pansiterias / lomians. It is named "Pansiteria Magnifico". The main items are mostly pansit and lomi. There are also extras and drinks to choose from to truly enjoy it with their food. This program aims to aid in more fast and secure payment and food ordering.
+
 
 # How the program works
 * To order, Press [o]. It will automatically convert the lowercase o into an uppercase o.
