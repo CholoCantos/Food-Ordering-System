@@ -32,7 +32,7 @@
 Link: 
 
 # Authors
-* [@NicoAngeloBurog](https://github.com/NicoAngeloBurog)
-* [@CholoCantos](https://github.com/CholoCantos)
-* [@KevinGabrielDelgado](https://github.com/KevinGabrielDelgado)
-* [@johnmartinpogi](https://github.com/johnmartinpogi)
+* [Nico Angelo Burog](https://github.com/NicoAngeloBurog)
+* [Cesar Cholo Cantos](https://github.com/CholoCantos)
+* [Kevin Gabriel Delgado](https://github.com/KevinGabrielDelgado)
+* [John Martin Panganiban](https://github.com/johnmartinpogi)
