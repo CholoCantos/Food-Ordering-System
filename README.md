@@ -5,7 +5,7 @@
 
 # How the program works
 * To order, Press [o]. It will automatically convert the lowercase o into an uppercase o.
-* Tom view receipts, Press [r]. It will retrieve the payments of the previous orders
+* To view receipts, Press [r]. It will retrieve the payments of the previous orders
 * To exit the program, Press [e]. It will exit the program once the conditions are met.
 
 ![image](https://user-images.githubusercontent.com/113867969/206911337-30589c97-3496-40e0-8b57-ade9d7dd11f5.png)
